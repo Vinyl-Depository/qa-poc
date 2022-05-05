@@ -1,0 +1,14 @@
+{
+	"ignores": [
+		"stylelint-config-prettier-scss",
+		"stylelint-config-recess-order",
+		"stylelint-config-standard-scss",
+		"lint-staged",
+		"commitizen",
+		"@types/node",
+		"@types/react-dom",
+		"@commitlint/cli",
+		"cz-vinyl"
+	],
+	"skipMissing": true
+}
