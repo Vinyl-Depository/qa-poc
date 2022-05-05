@@ -5,10 +5,16 @@
 
 .startProcessButton {
 	padding: 5px 20px;
-	margin-top: 20px;
+	margin: 20px 0;
 	font-size: 2rem;
 	color: #fff;
 	background-color: #4caf50;
 	border-radius: 6px;
 	box-shadow: 1px 1px 3px 1px #666;
+}
+
+.errorMessage {
+	margin-top: 20px;
+	font-size: 2rem;
+	color: rgb(202 9 9);
 }

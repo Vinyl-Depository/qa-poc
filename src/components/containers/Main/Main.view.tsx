@@ -1,22 +1,36 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 
 import ClientTemplate from './ClientTemplate';
+import Progress from './Progress';
 
 import classes from './Main.module.scss';
 
-interface IProps {}
+interface IProps {
+	readonly smokeAutomationsErrorMessage: string | null;
+	readonly onStartProcessClick: () => void;
+}
 
-const MainView: React.FC<IProps> = () => {
-	const { t } = useTranslation();
-
+const MainView: React.FC<IProps> = (props: React.PropsWithChildren<IProps>) => {
 	return (
 		<>
-			<h1 className={classes['header']}>{t('mainHeader')}</h1>
+			<h1 className={classes['header']}>
+				<Trans i18nKey="mainHeader" />
+			</h1>
 			<ClientTemplate />
-			<button className={classes['startProcessButton']} type="button" role="button">
-				{t('startProcess')}
+			<button
+				className={classes['startProcessButton']}
+				type="button"
+				role="button"
+				onClick={props.onStartProcessClick}
+			>
+				<Trans i18nKey="startProcess" />
 			</button>
+			<Progress />
+
+			{props.smokeAutomationsErrorMessage !== null && (
+				<span className={classes['errorMessage']}>{props.smokeAutomationsErrorMessage}</span>
+			)}
 		</>
 	);
 };

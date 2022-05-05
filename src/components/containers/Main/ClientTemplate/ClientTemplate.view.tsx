@@ -1,16 +1,16 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 
 import classes from './ClientTemplate.module.scss';
 
 interface IProps {}
 
 const ClientTemplateView: React.FC<IProps> = () => {
-	const { t } = useTranslation();
-
 	return (
 		<>
-			<h3 className={classes['header']}>{t('clientTemplate.header')}</h3>
+			<h3 className={classes['header']}>
+				<Trans i18nKey="clientTemplate.header" />
+			</h3>
 			<iframe className={classes['iframe']} src="template.html" />
 		</>
 	);

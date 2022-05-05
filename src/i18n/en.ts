@@ -4,6 +4,9 @@ const en = {
 		header: 'Your template',
 	},
 	startProcess: 'Start Process',
+	progress: {
+		smoke: 'Smoke<br />Automations',
+	},
 };
 
 export default en;
