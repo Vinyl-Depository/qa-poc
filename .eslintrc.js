@@ -127,7 +127,7 @@ module.exports = {
 
 		'unused-imports/no-unused-imports': 'error',
 
-		'@next/next/no-img-element': 'error',
+		'@next/next/no-img-element': 'off',
 
 		'jsx-a11y/alt-text': 'error',
 		'jsx-a11y/html-has-lang': 'error',

@@ -5,6 +5,8 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import '../i18n/config';
 import '../styles/custom.scss';
 

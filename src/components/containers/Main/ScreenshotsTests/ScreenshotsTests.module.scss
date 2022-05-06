@@ -1,0 +1,51 @@
+.header {
+	margin-top: 20px;
+}
+
+.carousel {
+	display: flex;
+	width: 70%;
+	padding: 20px;
+	margin-top: 20px;
+	box-shadow: 1px 1px 3px 1px #666;
+}
+
+.indicator {
+	width: 16px;
+	height: 16px;
+	margin-inline-start: 20px;
+	border: 2px solid #a1a7d4;
+	border-radius: 50%;
+
+	&--selected {
+		background-color: #e8ebff;
+	}
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	width: auto;
+	height: 35px;
+	cursor: pointer;
+	fill: #595d8b;
+
+	&--prev {
+		transform: rotate(180deg);
+	}
+
+	&--next {
+		right: 0;
+	}
+}
+
+.continue {
+	padding: 5px 20px;
+	margin: 20px 0;
+	font-size: 2rem;
+	color: #fff;
+	background-color: #4caf50;
+	border-radius: 6px;
+	box-shadow: 1px 1px 3px 1px #666;
+}

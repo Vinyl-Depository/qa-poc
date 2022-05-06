@@ -1,3 +1,5 @@
 import { IServerResponse } from './server';
 
-export interface ISmokeAutomationsResponse extends IServerResponse {}
+export type ISmokeAutomationsResponse = IServerResponse<{
+	screenshots: string[];
+}>;

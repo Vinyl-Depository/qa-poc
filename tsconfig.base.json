@@ -31,6 +31,7 @@
 		"paths": {
 			"@/containers/*": ["src/components/containers/*"],
 			"@/layout/*": ["src/components/layout/*"],
+			"@/ui/*": ["src/components/ui/*"],
 			"@/hooks/*": ["src/hooks/*"],
 			"@/interfaces/*": ["src/interfaces/*"],
 			"@/models/*": ["src/models/*"],

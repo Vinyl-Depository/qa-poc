@@ -1,4 +1,5 @@
-export interface IServerResponse {
-	readonly success: boolean;
-	readonly message: string;
+export interface IServerResponse<T> {
+	success: boolean;
+	message: string;
+	data?: T;
 }
